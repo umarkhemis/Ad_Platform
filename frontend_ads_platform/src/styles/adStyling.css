@@ -1,0 +1,74 @@
+/* Home Page Styling */
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .home-title {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color: #333;
+    color: red;
+  }
+  
+  /* Grid for ads */
+  .ads-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Styling each ad card */
+  .ad-card {
+    background: #af9b9b;
+    opacity: 0.9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .ad-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Making ads clickable */
+  .ad-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  
+  /* Ad image styling */
+  .ad-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Video styling */
+  .ad-video {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  /* Ad title */
+  .ad-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #222;
+  }
+  
+  /* Ad description */
+  .ad-description {
+    font-size: 1rem;
+    color: #666;
+  }
+  
