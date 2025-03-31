@@ -20,16 +20,20 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    transition: opacity 0.9s ease-in-out;
   }
   
   /* Styling each ad card */
   .ad-card {
+    width: 300px;
+    height: auto;
     background: #af9b9b;
     opacity: 0.9;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
     transition: transform 0.3s ease-in-out;
+    overflow: hidden;
   }
   
   .ad-card:hover {
@@ -46,14 +50,15 @@
   /* Ad image styling */
   .ad-image {
     width: 100%;
-    height: 200px;
+    height: auto;
     object-fit: cover;
     border-radius: 8px;
   }
   
   /* Video styling */
   .ad-video {
-    width: 100%;
+    /* width: 100%; */
+    height: 200px;
     border-radius: 8px;
     margin-top: 10px;
   }
@@ -70,5 +75,91 @@
   .ad-description {
     font-size: 1rem;
     color: #666;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+  .fade-in {
+    opacity: 1;
   }
   
+  .fade-out {
+    opacity: 0;
+  }
+  .nav-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .nav-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .prev {
+    margin-right: 10px;
+  }
+  
+  .next {
+    margin-left: 700px;
+  }
+  .prev-next-button{
+    display: flex;
+    justify-content: space-between;
+    flex: 6;
+    gap: 1;
+    margin-top: 20px;
+  }
+
+  /* .faq-section {
+    max-width: 2000px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  .faq-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Footer */
+  /* .footer {
+    background-color: #5d8cbb;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+  } */ */
+  .faq-section {
+    width: 200%;
+    background-color: #111214;
+    padding: 40px 0;
+    color: rgb(255, 0, 0);
+  }
+  
+  .faq-title {
+    text-align: center;
+    color: rgb(255, 0, 0);
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  /* Make FAQ section span full width */
+  .MuiAccordion-root {
+    max-width: 200%;
+    margin: 10px auto;
+    background: rgb(9, 9, 9);
+  }
+  
+  /* Footer */
+  .footer {
+    /* background-color: #d0e1f3; */
+    width: 1000px;
+    color: rgb(98, 0, 255);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+  }

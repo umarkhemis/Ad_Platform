@@ -59,7 +59,8 @@ const CreateAds = () => {
 
   return (
     <div className='ad-div'>
-      <Navbar />
+      {/* <Navbar /> */}
+      < div className='home'><h5 style={{marginTop: '70px'}}><a className='a' href="/">⏮ Back </a></h5></div>
       <h2>Create Ad</h2>
       {message && <p>{message}</p>}
       <form onSubmit={createAd} encType='multipart/form-data'>
@@ -88,9 +89,9 @@ const CreateAds = () => {
           </select>
 
           {adType === "image" && <input type="file" accept="image/*" onChange={(e) => setImage(e.target.files[0])} />}
-          {/* <input type="file" accept="image/*" onChange={(e) => handleFileChange(e, "image")} /> */}
+          
           {adType === "video" && <input type="file" accept="video/*" onChange={(e) => setVideo(e.target.files[0])} />}
-          {/* <input type="file" accept="video/*" onChange={(e) => handleFileChange(e, "video")} /> */}
+          
         </div>
         {/* <br />
         <div>

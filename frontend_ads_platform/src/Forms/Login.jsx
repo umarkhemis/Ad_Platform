@@ -3,6 +3,7 @@ import axios from 'axios'
 import LoadingIndicator from './LoadingIndicator';
 import { useNavigate } from 'react-router-dom';
 import '../styles/form.css'
+import { Link } from 'react-router-dom';
 
 const Login = ({ setToken}) => {
     const [username, setUsername] = useState('')
@@ -73,14 +74,15 @@ const Login = ({ setToken}) => {
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Password"
                 autoComplete='off'
-                autoFocus
+                
             />
             <br />
             {loading && <LoadingIndicator />}
             <button className="form-button" type="submit">Login</button>
             <br/>
             <div>
-                <p className="p2">Don't have an Account?<a href="/register">Register</a></p>
+                {/* <p className="p2">Don't have an Account?<a href="/register">Register</a></p> */}
+                <p className='p2'><Link to="/reset-password">Forgot Password?</Link></p>
             </div>
         </form>
     </div>

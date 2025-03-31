@@ -1,0 +1,117 @@
+.delete-update-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  transition: opacity 0.9s ease-in-out;
+  }
+  .ad-image {
+      width: 50%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    
+    /* Video styling */
+  .ad-video {
+    /* width: 100%; */
+    height: 90px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  /* Ad title */
+  .ad-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #222;
+  }
+  
+  /* Ad description */
+  .ad-description {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+  /* .cancel-button {
+    background-color: rgb(234, 226, 226);
+    cursor: pointer;
+    margin-right: 100px;
+  }
+
+  .save-button{
+    background-color: gray;
+    cursor: pointer;
+  } */
+   /* .button{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    width: 40%;
+    /* justify-content: space-between; */
+   } */
+
+  .edit-form label {
+    font-weight: bolder;
+    margin-top: 10px;
+    font-size: 24;
+    color: red;
+  }
+  
+  .edit-form input,
+  .edit-form textarea , .edit-form select{
+    width: 60%;
+    padding: 8px;
+    margin: 8px 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* .edit-form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  } */
+  
+  /* .edit-form input[type="submit"]:hover {
+    background-color: #0056b3;
+    display: flex;
+    flex-direction: column;
+    flex: 6;
+  } */
+  
+.edit-button {
+  cursor: pointer;
+  margin-right: 30px;
+  background-color: #4000ff;
+  border-radius: 5px;
+}
+.delete-button {
+  cursor: pointer;
+  margin-right: 30px;
+  background-color: #ff0000;
+  border-radius: 5px;
+}
+
+.edit-button :hover{
+  background-color: #923636;
+}
+.save-button{
+  cursor: pointer;
+  margin-right: 30px;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+.cancel-button{
+  cursor: pointer;
+  margin-right: 30px;
+  background-color: #c21c1c;
+  border-radius: 5px;
+}
